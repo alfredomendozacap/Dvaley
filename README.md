@@ -2,3 +2,4 @@
 
 **Estructura de Carpetas Inicial**
 _Tarea pendiente_ -> hacer el Mockup
+> Ya corregi los conflictos

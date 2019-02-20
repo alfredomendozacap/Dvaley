@@ -1,4 +1,4 @@
 ## Landing Page D´valey
 
 **Estructura de Carpetas Inicial**
-VETE A LA MIERDA
+_Tarea pendiente_ -> hacer el Mockup

@@ -1,0 +1,31 @@
+$container: container;
+$row: row;
+$col: col;
+$item: item;
+$fractions : 3 6 !default;
+$l-unit : .5rem !default;
+
+// Para FlexBox
+$gutter: $l-unit * 4 !default;
+
+// Para Css Grid
+$gap : $l-unit * 4 !default;
+$max-grid-columns : 12 !default;
+
+// Breakpoints
+$breakpoints : (
+    xs : 0,
+    sm : 576px,
+    md : 768px,
+    lg : 992px,
+    xl : 1200px
+) !default;
+
+$max-width-container: (
+    xs : '',
+    sm : 540px,
+    md : 720px,
+    lg : 960px,
+    xl : 1140px
+);
+$sizes: map-keys($breakpoints);

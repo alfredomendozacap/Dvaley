@@ -29,3 +29,6 @@ $max-width-container: (
     xl : 1140px
 );
 $sizes: map-keys($breakpoints);
+
+// Fuente de Texto
+$font-text: 'Dosis', sans-serif;

@@ -1,0 +1,117 @@
+section.Contacto {
+
+    // ========== CABEZERA =========
+    .cabezera {
+        text-align: center;
+        margin: auto;
+        width: 90%
+    }
+
+    p.pregunta {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+
+    .icon img {
+        border: 1.5px solid #000;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px #000;
+    }
+
+    .icon {
+        margin-bottom: -20px;
+    }
+
+    // ========== CABEZERA =========
+
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+
+    // ========== FORMULARIO=========
+    .formulario {
+        background-image: linear-gradient(rgba($color-fuxia, 0.5),
+            rgba($color-fuxia, 0.5)),
+            url(../img/images/teamwork-1-min.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        border-radius: 14px;
+        padding: 5px 20px 15px 20px;
+        color: #fff;
+        margin: 0px 20px;
+    }
+
+    p.tit-form {
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        border-radius: 5px;
+        border: solid 2px $color-fuxia;
+        margin-bottom: 10px;
+    }
+
+    .celus {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .tel,
+    .cel {
+        width: 45%;
+    }
+
+    textarea {
+        min-height: 170px;
+        max-height: 170px;
+        min-width: 360px;
+        max-width: 360px;
+    }
+
+    input {
+        padding: 8px 10px;
+    }
+    // ========== FORMULARIO =========
+
+
+    // ========== PREGUNTAS FRECUENTES =========
+
+
+    .pre-frecuentes {
+        p {
+            font-size: 26px;
+            font-weight: 600;
+            padding: 0;
+            margin: 5px 0px;
+        }
+
+        ul {
+            list-style-image: url(../img/icons/faqlist.png);
+            font-size: 18px;
+        }
+    }
+
+    .pre-frecuentes {
+        width: 400px;
+        margin: 0px 20px;
+    }
+
+
+
+}

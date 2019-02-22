@@ -1,5 +1,5 @@
-## Landing Page D´valey
+# Landing Page D´valey
 
-**Estructura de Carpetas Inicial**
-_Tarea pendiente_ -> hacer el Mockup
-> Ya corregi los conflictos
+## *LOGO*
+
+![LOGO D´VALLEY](./assets/img/icons/logo-dvalley.png)

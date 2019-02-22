@@ -1,60 +1,37 @@
-body {
-    font-family: 'Dosis', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 footer {
-    .contenedor-footer {
-        background: url(../img/texturas/escheresque_ste.png);
-        justify-content: space-between;
-        color: #fff;
-        padding: 15px 10px 30px 10px;
+    font-size: 25px;
+    background: url(../img/texturas/escheresque_ste.png);
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+    color: #fff;
+    > .container{
+        @include mq(sm,max){
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+        };
     }
-}
-
-footer {
-    .info-footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        .columna {
-            margin: 0px 20px;
-        }
-    }
-}
-
-footer {
-    .tit-footer {
-        font-size: 25px;
-        font-weight: bold;
-    }
-}
-
-footer {
     ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        font-size: 13px;
+        font-size: em(12px);
 
         li {
             font-weight: 500;
             margin: 18px 0px;
         }
-
-        .telf {
-            color: #FF105f;
-            font-size: 25px;
-            font-weight: bolder;
-            margin: 2px 0px;
-            text-shadow: 0px 0px 10px #000;
+        a {
+        text-decoration: none;
+        color: #fff;
         }
     }
-}
-
-footer {
+    .tit-footer {
+    font-size: 1em;
+    font-weight: bold;
+    @include mq(sm,max){
+        margin-top: 0;
+    }
+    }
     .rayita {
         width: 40px;
         background: #FF105f;
@@ -62,16 +39,31 @@ footer {
         margin: -18px 0px 25px 0px;
         border-radius: 5px;
     }
-}
-
-footer {
-    a {
-        text-decoration: none;
-        color: #fff;
-
+    
+    .info__dvalley{
+        .telf {
+            color: #FF105f;
+            font-size: 32px;
+            font-weight: bolder;
+            margin: 2px 0px;
+            text-shadow: 0px 0px 10px #000;
+            line-height: 1em;
+        }
+    }
+    .info__dvalley,
+    .social__dvalley{
+        @include mq(sm,max){
+            padding-bottom: 2rem;
+        };
     }
 
     .logo-footer {
-        margin: 30px 10px;
+        align-self: center;
+        > img {
+            width: 100%;
+        }
+        @include mq(sm,max){
+            margin-top: 2rem;
+        }
     }
 }

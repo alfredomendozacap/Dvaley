@@ -1,0 +1,75 @@
+section.SomosDvalley {
+    .slider {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contenedor-slider {
+        display: flex;
+        animation: cambio 15s infinite alternate;
+        animation-timing-function: linear;
+        width: 300%;
+    }
+
+    .imagen {
+        width: 100%;
+    }
+
+    .imagen img {
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .texto-slider {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        text-align: center;
+    }
+
+    p.tit {
+        font-weight: 700;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    p.info {
+        font-size: 18px;
+        color: #fff;
+        width: 40%;
+        margin: auto;
+        line-height: 20px;
+    }
+}
+
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+
+    33% {
+        margin-left: -100%;
+    }
+
+    63% {
+        margin-left: -100%;
+    }
+
+
+    66% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+
+}

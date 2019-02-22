@@ -1,0 +1,60 @@
+section.Solucion {
+    p.tit-seccion {
+        font-weight: 600;
+        font-size: 28px;
+        text-align: left;
+        width: 70%;
+        margin: auto;
+    }
+
+    .contenedor-solucion {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .texto {
+        width: 300px;
+        margin: 0px 20px;
+    }
+
+
+    .icons{
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon {
+        text-align: center;
+        width: 100px;
+        margin: 0px 10px;
+    }
+
+    .icon img {
+        margin-bottom: -15px;
+        width: 70px;
+    }
+
+    .icon p {
+        line-height: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width: 840px) {
+    section.Solucion {
+        .contenedor-solucion {
+            text-align: center;
+        }
+
+        p.tit-seccion {
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+  
+}
+

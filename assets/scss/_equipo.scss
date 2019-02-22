@@ -1,0 +1,72 @@
+section.Equipo {
+
+
+
+    p.tit-sec {
+        font-weight: 600;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .contenedor-equipo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .targeta {
+        text-align: center;
+        width: 30%;
+        margin: 25px 0px;
+    }
+
+    .foto img {
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px #000;
+    }
+
+    p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    p.nombre {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    p.cargo span {
+        font-weight: 700;
+        font-size: 20px;
+        border: 1px solid $color-fuxia;
+        padding: 1px 15px;
+        border-radius: 5px;
+        transition: all ease .5s;
+        cursor: pointer;
+    }
+
+    p.cargo:hover span {
+        background: $color-fuxia;
+        color: #fff;
+    }
+
+    p.frase {
+        font-style: italic;
+        color: $color-plomo;
+        margin-top: 10px;
+        transition: all ease .5s;
+        cursor: pointer;
+    }
+
+    p.frase:hover {
+        color: $color-fuxia;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    section.Equipo {
+        .targeta {
+            width: 300px;
+        }
+    }
+}

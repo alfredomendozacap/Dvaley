@@ -1676,6 +1676,242 @@ template {
   margin-bottom: 1em;
 }
 
+section.Cifras .contenedor-cifras {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+section.Cifras .columna {
+  text-align: center;
+  margin-top: -100px;
+}
+section.Cifras p.cifra {
+  color: #FF105f;
+  font-weight: 700;
+  font-size: 80px;
+  margin-bottom: -50px;
+  text-shadow: 2px 3px 2px #000;
+}
+section.Cifras p.texto {
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+  line-height: 30px;
+}
+
+section.Solucion p.tit-seccion {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: left;
+  width: 70%;
+  margin: auto;
+}
+section.Solucion .contenedor-solucion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.Solucion .texto {
+  width: 300px;
+  margin: 0px 20px;
+}
+section.Solucion .icons {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section.Solucion .icon {
+  text-align: center;
+  width: 100px;
+  margin: 0px 10px;
+}
+section.Solucion .icon img {
+  margin-bottom: -15px;
+  width: 70px;
+}
+section.Solucion .icon p {
+  line-height: 15px;
+}
+
+@media only screen and (max-width: 840px) {
+  section.Solucion .contenedor-solucion {
+    text-align: center;
+  }
+  section.Solucion p.tit-seccion {
+    text-align: center;
+    line-height: 30px;
+  }
+}
+section.SomosDvalley .slider {
+  width: 100%;
+  height: 50vh;
+  margin: 20px auto;
+  position: relative;
+  background: #FF105f;
+}
+section.SomosDvalley .slide1,
+section.SomosDvalley .slide2,
+section.SomosDvalley .slide3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+section.SomosDvalley .slide1 {
+  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fade 30s infinite;
+  -webkit-animation: fade 15s infinite;
+}
+section.SomosDvalley .slide2 {
+  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fade2 30s infinite;
+  -webkit-animation: fade2 15s infinite;
+}
+section.SomosDvalley .slide3 {
+  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fade3 30s infinite;
+  -webkit-animation: fade3 15s infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+section.SomosDvalley .texto-slider {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+section.SomosDvalley .contenedor-texto {
+  position: absolute;
+  top: -45vh;
+  color: #fff;
+}
+section.SomosDvalley p.tit {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 0px;
+  text-shadow: 3px 1px 3px #000;
+}
+section.SomosDvalley p.info {
+  font-weight: 500;
+  font-size: 22px;
+  width: 400px;
+  margin: auto;
+  line-height: 20px;
+  padding: 0;
+  margin: 0px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+@media only screen and (max-width: 450px) {
+  section.SomosDvalley p.info {
+    width: 90%;
+  }
+}
+section.Equipo p.tit-sec {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+}
+section.Equipo .contenedor-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section.Equipo .targeta {
+  text-align: center;
+  width: 30%;
+  margin: 25px 0px;
+}
+section.Equipo .foto img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #000;
+}
+section.Equipo p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+section.Equipo p.nombre {
+  font-weight: 600;
+  font-size: 24px;
+}
+section.Equipo p.cargo span {
+  font-weight: 700;
+  font-size: 20px;
+  border: 1px solid #FF105f;
+  padding: 1px 15px;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+section.Equipo p.cargo:hover span {
+  background: #FF105f;
+  color: #fff;
+}
+section.Equipo p.frase {
+  font-style: italic;
+  color: #464646;
+  margin-top: 10px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+section.Equipo p.frase:hover {
+  color: #FF105f;
+}
+
+@media only screen and (max-width: 1100px) {
+  section.Equipo .targeta {
+    width: 300px;
+  }
+}
 body {
   font-family: "Dosis", sans-serif;
   margin: 0;
@@ -1841,241 +2077,6 @@ section.Contacto .pre-frecuentes {
   section.Contacto .formulario {
     width: 90%;
   }
-}
-section.Equipo p.tit-sec {
-  font-weight: 600;
-  font-size: 28px;
-  text-align: center;
-}
-section.Equipo .contenedor-equipo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-section.Equipo .targeta {
-  text-align: center;
-  width: 30%;
-  margin: 25px 0px;
-}
-section.Equipo .foto img {
-  border-radius: 50%;
-  box-shadow: 0px 0px 5px #000;
-}
-section.Equipo p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-section.Equipo p.nombre {
-  font-weight: 600;
-  font-size: 24px;
-}
-section.Equipo p.cargo span {
-  font-weight: 700;
-  font-size: 20px;
-  border: 1px solid #FF105f;
-  padding: 1px 15px;
-  border-radius: 5px;
-  transition: all ease 0.5s;
-  cursor: pointer;
-}
-section.Equipo p.cargo:hover span {
-  background: #FF105f;
-  color: #fff;
-}
-section.Equipo p.frase {
-  font-style: italic;
-  color: #464646;
-  margin-top: 10px;
-  transition: all ease 0.5s;
-  cursor: pointer;
-}
-section.Equipo p.frase:hover {
-  color: #FF105f;
-}
-
-@media only screen and (max-width: 1100px) {
-  section.Equipo .targeta {
-    width: 300px;
-  }
-}
-section.SomosDvalley .slider {
-  width: 100%;
-  height: 50vh;
-  margin: 20px auto;
-  position: relative;
-  background: #FF105f;
-}
-section.SomosDvalley .slide1,
-section.SomosDvalley .slide2,
-section.SomosDvalley .slide3 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-section.SomosDvalley .slide1 {
-  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo1.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  animation: fade 30s infinite;
-  -webkit-animation: fade 15s infinite;
-}
-section.SomosDvalley .slide2 {
-  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  animation: fade2 30s infinite;
-  -webkit-animation: fade2 15s infinite;
-}
-section.SomosDvalley .slide3 {
-  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  animation: fade3 30s infinite;
-  -webkit-animation: fade3 15s infinite;
-}
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  33.333% {
-    opacity: 0;
-  }
-  66.666% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade2 {
-  0% {
-    opacity: 0;
-  }
-  33.333% {
-    opacity: 1;
-  }
-  66.666% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fade3 {
-  0% {
-    opacity: 0;
-  }
-  33.333% {
-    opacity: 0;
-  }
-  66.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-section.SomosDvalley .texto-slider {
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-section.SomosDvalley .contenedor-texto {
-  position: absolute;
-  top: -45vh;
-  color: #fff;
-}
-section.SomosDvalley p.tit {
-  font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 0px;
-  text-shadow: 3px 1px 3px #000;
-}
-section.SomosDvalley p.info {
-  font-weight: 500;
-  font-size: 22px;
-  width: 400px;
-  margin: auto;
-  line-height: 20px;
-  padding: 0;
-  margin: 0px;
-  text-shadow: 1px 1px 2px #000;
-}
-
-@media only screen and (max-width: 450px) {
-  section.SomosDvalley p.info {
-    width: 90%;
-  }
-}
-section.Solucion p.tit-seccion {
-  font-weight: 600;
-  font-size: 28px;
-  text-align: left;
-  width: 70%;
-  margin: auto;
-}
-section.Solucion .contenedor-solucion {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-section.Solucion .texto {
-  width: 300px;
-  margin: 0px 20px;
-}
-section.Solucion .icons {
-  width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-section.Solucion .icon {
-  text-align: center;
-  width: 100px;
-  margin: 0px 10px;
-}
-section.Solucion .icon img {
-  margin-bottom: -15px;
-  width: 70px;
-}
-section.Solucion .icon p {
-  line-height: 15px;
-}
-
-@media only screen and (max-width: 840px) {
-  section.Solucion .contenedor-solucion {
-    text-align: center;
-  }
-  section.Solucion p.tit-seccion {
-    text-align: center;
-    line-height: 30px;
-  }
-}
-section.Cifras .contenedor-cifras {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-section.Cifras .columna {
-  text-align: center;
-  margin-top: -100px;
-}
-section.Cifras p.cifra {
-  color: #FF105f;
-  font-weight: 700;
-  font-size: 80px;
-  margin-bottom: -50px;
-  text-shadow: 2px 3px 2px #000;
-}
-section.Cifras p.texto {
-  font-weight: 600;
-  font-size: 30px;
-  color: #000;
-  line-height: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,190 @@
+.slider-dvalley{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    .slider__box{
+        position: relative;
+        width: 200%;
+        display: flex;
+        animation: slide 8s infinite alternate;
+        animation-timing-function: linear;
+    }
+    .slider__items{
+        width: 100%;
+        height: 100%;
+        &:nth-child(1) {
+            background-image: linear-gradient(rgba(#FF105F,.2),rgba(#FF105F,.2)), img('backgrounds/teamwork-1-min.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        &:nth-child(2) {
+            background-image: linear-gradient(rgba(#FF105F,.2),rgba(#FF105F,.2)), img('backgrounds/finanzas-corporativas.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    }
+}
+@keyframes slide {
+    0%{
+        margin-left: 0;
+    }
+    45%{
+        margin-left: 0;
+    }
+
+    55%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: -100%;
+    }
+
+    // 0%{
+    //     left: 100%;
+    //     width: 100%;
+    // }
+    // 5%{
+    //     left: 0%;
+    // }
+    // 25%{
+    //     left: 0%;
+    // }
+    // 30%{
+    //     left: -100%;
+    //     width: 100%;
+    // }
+    // 30.0001% {
+    //     left: -100%;
+    //     width: 0%;
+    // }
+    // 100% {
+    //     left: 100%;
+    //     width: 0%;
+    // }
+}
+
+.first-item{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-top: 15%;
+    padding-bottom: 2rem;
+    font-size: 15px;
+    .row{
+        align-items: center;
+        @include mq(sm,max){
+            flex-direction: column;
+        }
+    }
+    .second__place{
+        line-height: 1;
+        > h1, > h2, >p{
+            margin: 0;
+            font-size: 5em;
+            @include mq(md,max){
+                font-size: 4em;
+            }
+            @include mq(sm,max){
+                font-size: 3em;
+            }
+            font-weight: 700;
+        }
+        > h2 {
+            text-shadow: 0 0 10px #000;
+            color: $primary-color;
+        }
+    }
+    .product__dvalley{
+        width: 100%;
+    }
+    .name__product{
+        margin: 0;
+        font-size: 5em;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        color: $primary-color;
+        text-align: right;
+        @include mq(sm,max){
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        @include mq(md,max){
+            text-align: center;
+        }
+        @include mq(lg) {
+            text-align: left;
+            font-size: 3em;
+        }
+    }
+    .logo__startup{
+        @include mq(md){
+            margin-left: auto;
+        }
+        > img {
+            width: 100%;
+        }
+    }
+}
+
+.second-item{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-top: 15%;
+    padding-bottom: 2rem;
+    font-size: 15px;
+    .row {
+        align-items: center;
+    }
+    .list__benefits{
+       > h2{
+            margin: 0;
+            font-size: 5em;
+            font-weight: 700;
+            line-height: 1;
+            @include mq(md,max){
+                font-size: 4em;
+            }
+            @include mq(sm,max){
+                font-size: 3em;
+            }
+        }
+        
+        > ul {
+            list-style-position: inside;
+            font-size: 3em;
+            margin-top: 1rem;
+            li{
+                // list-style-image: img('icons/strawberry.png');
+                text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+            }
+        }
+    }
+    .model__products{
+        display: flex;
+        flex-direction: column;
+        .products{
+            display: flex;
+            > div{
+                // width: 100%;
+                max-width: rem(200px);
+                flex: 1;
+            }
+            > div::nth-child(2){
+                align-self: flex-start;
+            }
+        }
+        .description{
+            font-size: 2em;
+            text-align: center;
+            margin-top: 0;
+        }
+    }
+    span, li,p{
+        color: $primary-color;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    }
+}

@@ -1,0 +1,30 @@
+.Problema{
+    font-size: 1em;
+    .row{
+        align-items: center;
+    }
+    p,h2{
+        text-align: center;
+    }
+    .img__chart{
+        @include mq(md,max){
+            border-top: 2px dashed #000;
+        }
+        img{
+            display: block;
+        }
+    }
+    .info__issue{
+        h2{
+            font-size: em(48px);
+            margin-bottom: 0;
+        }
+        li{
+            // list-style-image: img('icons/shield.png');
+        }
+        li:nth-child(even){
+            margin-top: 1em;
+            margin-bottom: 1em; 
+        }
+    }
+}

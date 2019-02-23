@@ -1,0 +1,32 @@
+.navbar-dvalley{
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all .3s ease;
+    .logo__dvalley{
+        > img {
+            width: 100%;
+        }
+    }
+    ul {
+       margin-top: 0;
+       margin-bottom: 0;
+       padding-left: 0; 
+       list-style: none;
+       align-items: center;
+       margin-left: auto;
+    }
+    li {
+        flex: 1;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        text-align: center;
+    }
+}

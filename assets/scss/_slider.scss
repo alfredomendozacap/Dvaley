@@ -156,6 +156,9 @@
         > ul {
             list-style-position: inside;
             font-size: 3em;
+            @include mq(sm,max){
+                font-size: 2.5em;
+            }
             margin-top: 1rem;
             li{
                 // list-style-image: img('icons/strawberry.png');
@@ -182,6 +185,10 @@
         }
         .description{
             font-size: 2em;
+            line-height: 1;
+            @include mq(sm,max){
+                font-size: 3em;
+            }
             text-align: center;
             margin-top: 0;
         }

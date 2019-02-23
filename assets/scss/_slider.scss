@@ -95,7 +95,7 @@
         }
         > h2 {
             text-shadow: 0 0 10px #000;
-            color: $primary-color;
+            color: $color-fuxia;
         }
     }
     .product__dvalley{
@@ -105,7 +105,7 @@
         margin: 0;
         font-size: 5em;
         text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-        color: $primary-color;
+        color: $color-fuxia;
         text-align: right;
         @include mq(sm,max){
             font-size: 3em;
@@ -176,6 +176,9 @@
             > div::nth-child(2){
                 align-self: flex-start;
             }
+            img {
+                width: 100%;
+            }
         }
         .description{
             font-size: 2em;
@@ -184,7 +187,7 @@
         }
     }
     span, li,p{
-        color: $primary-color;
+        color: $color-fuxia;
         text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     }
 }

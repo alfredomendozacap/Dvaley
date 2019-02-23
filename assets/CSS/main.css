@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
 body {
   margin: 0;
   font-size: 1rem;
@@ -13,13 +32,337 @@ body {
   background-color: #fff;
 }
 
-.container {
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.container-fluid, .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 @media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -39,13 +382,6 @@ body {
   .container {
     max-width: 1140px;
   }
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .no-gutters {
@@ -1076,6 +1412,506 @@ body {
     max-width: 100%;
   }
 }
+.navbar-dvalley {
+  padding: 1rem 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.navbar-dvalley .logo__dvalley > img {
+  width: 100%;
+}
+.navbar-dvalley ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  align-items: center;
+  margin-left: auto;
+}
+.navbar-dvalley li {
+  flex: 1;
+}
+.navbar-dvalley a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.slider-dvalley {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-dvalley .slider__box {
+  position: relative;
+  width: 200%;
+  display: flex;
+  animation: slide 8s infinite alternate;
+  animation-timing-function: linear;
+}
+.slider-dvalley .slider__items {
+  width: 100%;
+  height: 100%;
+}
+.slider-dvalley .slider__items:nth-child(1) {
+  background-image: linear-gradient(rgba(255, 16, 95, 0.2), rgba(255, 16, 95, 0.2)), url(../../assets/img/backgrounds/teamwork-1-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.slider-dvalley .slider__items:nth-child(2) {
+  background-image: linear-gradient(rgba(255, 16, 95, 0.2), rgba(255, 16, 95, 0.2)), url(../../assets/img/backgrounds/finanzas-corporativas.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  45% {
+    margin-left: 0;
+  }
+  55% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+.first-item {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-top: 15%;
+  padding-bottom: 2rem;
+  font-size: 15px;
+}
+.first-item .row {
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .first-item .row {
+    flex-direction: column;
+  }
+}
+.first-item .second__place {
+  line-height: 1;
+}
+.first-item .second__place > h1, .first-item .second__place > h2, .first-item .second__place > p {
+  margin: 0;
+  font-size: 5em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .first-item .second__place > h1, .first-item .second__place > h2, .first-item .second__place > p {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .first-item .second__place > h1, .first-item .second__place > h2, .first-item .second__place > p {
+    font-size: 3em;
+  }
+}
+.first-item .second__place > h2 {
+  text-shadow: 0 0 10px #000;
+  color: #FF105f;
+}
+.first-item .product__dvalley {
+  width: 100%;
+}
+.first-item .name__product {
+  margin: 0;
+  font-size: 5em;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  color: #FF105f;
+  text-align: right;
+}
+@media screen and (max-width: 576px) {
+  .first-item .name__product {
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .first-item .name__product {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .first-item .name__product {
+    text-align: left;
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .first-item .logo__startup {
+    margin-left: auto;
+  }
+}
+.first-item .logo__startup > img {
+  width: 100%;
+}
+
+.second-item {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-top: 15%;
+  padding-bottom: 2rem;
+  font-size: 15px;
+}
+.second-item .row {
+  align-items: center;
+}
+.second-item .list__benefits > h2 {
+  margin: 0;
+  font-size: 5em;
+  font-weight: 700;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .second-item .list__benefits > h2 {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .second-item .list__benefits > h2 {
+    font-size: 3em;
+  }
+}
+.second-item .list__benefits > ul {
+  list-style-position: inside;
+  font-size: 3em;
+  margin-top: 1rem;
+}
+.second-item .list__benefits > ul li {
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.second-item .model__products {
+  display: flex;
+  flex-direction: column;
+}
+.second-item .model__products .products {
+  display: flex;
+}
+.second-item .model__products .products > div {
+  max-width: 12.5rem;
+  flex: 1;
+}
+.second-item .model__products .products > div::nth-child(2) {
+  align-self: flex-start;
+}
+.second-item .model__products .products img {
+  width: 100%;
+}
+.second-item .model__products .description {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+}
+.second-item span, .second-item li, .second-item p {
+  color: #FF105f;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.QDvalley {
+  font-size: 1em;
+}
+.QDvalley .row {
+  align-items: center;
+}
+.QDvalley p, .QDvalley h2 {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .QDvalley .product__qdvalley {
+    border-bottom: 2px dashed #000;
+  }
+}
+.QDvalley .product__qdvalley img {
+  display: block;
+}
+.QDvalley .info__qdvalley h2 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+.QDvalley .info__qdvalley li:nth-child(even) {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.Problema {
+  font-size: 1em;
+}
+.Problema .row {
+  align-items: center;
+}
+.Problema p, .Problema h2 {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .Problema .img__chart {
+    border-top: 2px dashed #000;
+  }
+}
+.Problema .img__chart img {
+  display: block;
+}
+.Problema .info__issue h2 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+.Problema .info__issue li:nth-child(even) {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+section.Cifras .contenedor-cifras {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+section.Cifras .columna {
+  text-align: center;
+  margin-top: -100px;
+}
+section.Cifras p.cifra {
+  color: #FF105f;
+  font-weight: 700;
+  font-size: 80px;
+  margin-bottom: -50px;
+  text-shadow: 2px 3px 2px #000;
+}
+section.Cifras p.texto {
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+  line-height: 30px;
+}
+
+section.Solucion p.tit-seccion {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: left;
+  width: 70%;
+  margin: auto;
+}
+section.Solucion .contenedor-solucion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.Solucion .texto {
+  width: 300px;
+  margin: 0px 20px;
+}
+section.Solucion .icons {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section.Solucion .icon {
+  text-align: center;
+  width: 100px;
+  margin: 0px 10px;
+}
+section.Solucion .icon img {
+  margin-bottom: -15px;
+  width: 70px;
+}
+section.Solucion .icon p {
+  line-height: 15px;
+}
+
+@media only screen and (max-width: 840px) {
+  section.Solucion .contenedor-solucion {
+    text-align: center;
+  }
+  section.Solucion p.tit-seccion {
+    text-align: center;
+    line-height: 30px;
+  }
+}
+section.SomosDvalley .slider {
+  width: 100%;
+  height: 50vh;
+  margin: 20px auto;
+  position: relative;
+  background: #FF105f;
+}
+section.SomosDvalley .slide1,
+section.SomosDvalley .slide2,
+section.SomosDvalley .slide3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+section.SomosDvalley .slide1 {
+  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fade 30s infinite;
+  -webkit-animation: fade 15s infinite;
+}
+section.SomosDvalley .slide2 {
+  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fade2 30s infinite;
+  -webkit-animation: fade2 15s infinite;
+}
+section.SomosDvalley .slide3 {
+  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fade3 30s infinite;
+  -webkit-animation: fade3 15s infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+section.SomosDvalley .texto-slider {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+section.SomosDvalley .contenedor-texto {
+  position: absolute;
+  top: -45vh;
+  color: #fff;
+}
+section.SomosDvalley p.tit {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 0px;
+  text-shadow: 3px 1px 3px #000;
+}
+section.SomosDvalley p.info {
+  font-weight: 500;
+  font-size: 22px;
+  width: 400px;
+  margin: auto;
+  line-height: 20px;
+  padding: 0;
+  margin: 0px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+@media only screen and (max-width: 450px) {
+  section.SomosDvalley p.info {
+    width: 90%;
+  }
+}
+section.Equipo p.tit-sec {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+}
+section.Equipo .contenedor-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section.Equipo .targeta {
+  text-align: center;
+  width: 30%;
+  margin: 25px 0px;
+}
+section.Equipo .foto img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #000;
+}
+section.Equipo p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+section.Equipo p.nombre {
+  font-weight: 600;
+  font-size: 24px;
+}
+section.Equipo p.cargo span {
+  font-weight: 700;
+  font-size: 20px;
+  border: 1px solid #FF105f;
+  padding: 1px 15px;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+section.Equipo p.cargo:hover span {
+  background: #FF105f;
+  color: #fff;
+}
+section.Equipo p.frase {
+  font-style: italic;
+  color: #464646;
+  margin-top: 10px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+section.Equipo p.frase:hover {
+  color: #FF105f;
+}
+
+@media only screen and (max-width: 1100px) {
+  section.Equipo .targeta {
+    width: 300px;
+  }
+}
 body {
   font-family: "Dosis", sans-serif;
   margin: 0;
@@ -1241,241 +2077,6 @@ section.Contacto .pre-frecuentes {
   section.Contacto .formulario {
     width: 90%;
   }
-}
-section.Equipo p.tit-sec {
-  font-weight: 600;
-  font-size: 28px;
-  text-align: center;
-}
-section.Equipo .contenedor-equipo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-section.Equipo .targeta {
-  text-align: center;
-  width: 30%;
-  margin: 25px 0px;
-}
-section.Equipo .foto img {
-  border-radius: 50%;
-  box-shadow: 0px 0px 5px #000;
-}
-section.Equipo p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-section.Equipo p.nombre {
-  font-weight: 600;
-  font-size: 24px;
-}
-section.Equipo p.cargo span {
-  font-weight: 700;
-  font-size: 20px;
-  border: 1px solid #FF105f;
-  padding: 1px 15px;
-  border-radius: 5px;
-  transition: all ease 0.5s;
-  cursor: pointer;
-}
-section.Equipo p.cargo:hover span {
-  background: #FF105f;
-  color: #fff;
-}
-section.Equipo p.frase {
-  font-style: italic;
-  color: #464646;
-  margin-top: 10px;
-  transition: all ease 0.5s;
-  cursor: pointer;
-}
-section.Equipo p.frase:hover {
-  color: #FF105f;
-}
-
-@media only screen and (max-width: 1100px) {
-  section.Equipo .targeta {
-    width: 300px;
-  }
-}
-section.SomosDvalley .slider {
-  width: 100%;
-  height: 50vh;
-  margin: 20px auto;
-  position: relative;
-  background: #FF105f;
-}
-section.SomosDvalley .slide1,
-section.SomosDvalley .slide2,
-section.SomosDvalley .slide3 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-section.SomosDvalley .slide1 {
-  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo1.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  animation: fade 30s infinite;
-  -webkit-animation: fade 15s infinite;
-}
-section.SomosDvalley .slide2 {
-  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  animation: fade2 30s infinite;
-  -webkit-animation: fade2 15s infinite;
-}
-section.SomosDvalley .slide3 {
-  background-image: linear-gradient(rgba(222, 40, 204, 0.5), rgba(222, 40, 204, 0.5)), url(../img/images/fondo3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  animation: fade3 30s infinite;
-  -webkit-animation: fade3 15s infinite;
-}
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  33.333% {
-    opacity: 0;
-  }
-  66.666% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade2 {
-  0% {
-    opacity: 0;
-  }
-  33.333% {
-    opacity: 1;
-  }
-  66.666% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fade3 {
-  0% {
-    opacity: 0;
-  }
-  33.333% {
-    opacity: 0;
-  }
-  66.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-section.SomosDvalley .texto-slider {
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-section.SomosDvalley .contenedor-texto {
-  position: absolute;
-  top: -45vh;
-  color: #fff;
-}
-section.SomosDvalley p.tit {
-  font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 0px;
-  text-shadow: 3px 1px 3px #000;
-}
-section.SomosDvalley p.info {
-  font-weight: 500;
-  font-size: 22px;
-  width: 400px;
-  margin: auto;
-  line-height: 20px;
-  padding: 0;
-  margin: 0px;
-  text-shadow: 1px 1px 2px #000;
-}
-
-@media only screen and (max-width: 450px) {
-  section.SomosDvalley p.info {
-    width: 90%;
-  }
-}
-section.Solucion p.tit-seccion {
-  font-weight: 600;
-  font-size: 28px;
-  text-align: left;
-  width: 70%;
-  margin: auto;
-}
-section.Solucion .contenedor-solucion {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-section.Solucion .texto {
-  width: 300px;
-  margin: 0px 20px;
-}
-section.Solucion .icons {
-  width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-section.Solucion .icon {
-  text-align: center;
-  width: 100px;
-  margin: 0px 10px;
-}
-section.Solucion .icon img {
-  margin-bottom: -15px;
-  width: 70px;
-}
-section.Solucion .icon p {
-  line-height: 15px;
-}
-
-@media only screen and (max-width: 840px) {
-  section.Solucion .contenedor-solucion {
-    text-align: center;
-  }
-  section.Solucion p.tit-seccion {
-    text-align: center;
-    line-height: 30px;
-  }
-}
-section.Cifras .contenedor-cifras {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-section.Cifras .columna {
-  text-align: center;
-  margin-top: -100px;
-}
-section.Cifras p.cifra {
-  color: #FF105f;
-  font-weight: 700;
-  font-size: 80px;
-  margin-bottom: -50px;
-  text-shadow: 2px 3px 2px #000;
-}
-section.Cifras p.texto {
-  font-weight: 600;
-  font-size: 30px;
-  color: #000;
-  line-height: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

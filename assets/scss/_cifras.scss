@@ -1,0 +1,37 @@
+section.Cifras {
+
+    .contenedor-cifras {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    .columna {
+        text-align: center;
+        margin-top: -100px;
+        
+    }
+
+
+    p.cifra {
+        color: $color-fuxia;
+        font-weight: 700;
+        font-size: 80px;
+        margin-bottom: -50px;
+        text-shadow: 2px 3px 2px #000;
+    }
+
+
+
+    p.texto {
+        font-weight: 600;
+        font-size: 30px;
+        color: #000;
+        line-height: 30px;
+    }
+
+
+
+
+}

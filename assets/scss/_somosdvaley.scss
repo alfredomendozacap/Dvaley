@@ -1,0 +1,152 @@
+section.SomosDvalley {
+    .slider {
+        width: 100%;
+        height: 50vh;
+        margin: 20px auto;
+        position: relative;
+        background: $color-fuxia;
+    }
+
+    .slide1,
+    .slide2,
+    .slide3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide1 {
+        background-image: linear-gradient(rgba($color-lila, 0.5),
+            rgba($color-lila, 0.5)),
+            url(../img/images/fondo1.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: fade 30s infinite;
+        -webkit-animation: fade 15s infinite;
+
+
+    }
+
+    .slide2 {
+        background-image: linear-gradient(rgba($color-lila, 0.5),
+            rgba($color-lila, 0.5)),
+            url(../img/images/fondo2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: fade2 30s infinite;
+        -webkit-animation: fade2 15s infinite;
+
+    }
+
+    .slide3 {
+        background-image: linear-gradient(rgba($color-lila, 0.5),
+            rgba($color-lila, 0.5)),
+            url(../img/images/fondo3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: fade3 30s infinite;
+        -webkit-animation: fade3 15s infinite;
+
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 1
+        }
+
+        33.333% {
+            opacity: 0
+        }
+
+        66.666% {
+            opacity: 0
+        }
+
+        100% {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade2 {
+        0% {
+            opacity: 0
+        }
+
+        33.333% {
+            opacity: 1
+        }
+
+        66.666% {
+            opacity: 0
+        }
+
+        100% {
+            opacity: 0
+        }
+    }
+
+    @keyframes fade3 {
+        0% {
+            opacity: 0
+        }
+
+        33.333% {
+            opacity: 0
+        }
+
+        66.666% {
+            opacity: 1
+        }
+
+        100% {
+            opacity: 0
+        }
+    }
+
+
+    .texto-slider {
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .contenedor-texto {
+        position: absolute;
+        top: -45vh;
+        color: #fff;
+
+    }
+
+    p.tit {
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 0px;
+        text-shadow: 3px 1px 3px #000;
+    }
+
+    p.info {
+        font-weight: 500;
+        font-size: 22px;
+        width: 400px;
+        margin: auto;
+        line-height: 20px;
+        padding: 0;
+        margin: 0px;
+        text-shadow: 1px 1px 2px #000;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    section.SomosDvalley {
+        p.info {
+            width: 90%;       
+        }
+    }
+
+}

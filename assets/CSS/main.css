@@ -1611,6 +1611,9 @@ template {
 .second-item .model__products .products > div::nth-child(2) {
   align-self: flex-start;
 }
+.second-item .model__products .products img {
+  width: 100%;
+}
 .second-item .model__products .description {
   font-size: 2em;
   text-align: center;

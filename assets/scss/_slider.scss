@@ -176,6 +176,9 @@
             > div::nth-child(2){
                 align-self: flex-start;
             }
+            img {
+                width: 100%;
+            }
         }
         .description{
             font-size: 2em;

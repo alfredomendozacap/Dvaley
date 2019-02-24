@@ -14,6 +14,9 @@
 
 
 // ESTILOS DEL LANDINGPAGE
+body {
+    background: img('backgrounds/oriental.png');
+}
 @import "./navbar";
 @import "./slider";
 @import "./qdvalley";

@@ -88,5 +88,70 @@
         }
     }
 }
+// Margins y paddings
+/* Margins */
+@each $size in $sizes {
+    @include mq($size){
+        @for $c from 1 through $max-grid-columns {
+            @each $sp,$ksp in $spacers {
+                @if $size == xs {
+                    /* Margins */
+                    #{'.mt-'+$sp}{
+                        margin-top: $ksp; 
+                    }
+                    #{'.mb-'+$sp}{
+                        margin-bottom: $ksp; 
+                    }
+                    #{'.ml-'+$sp}{
+                        margin-left: $ksp; 
+                    }
+                    #{'.mr-'+$sp}{
+                        margin-right: $ksp; 
+                    }
+                    /* Paddings */
+                    #{'.pt-'+$sp}{
+                        padding-top: $ksp; 
+                    }
+                    #{'.pb-'+$sp}{
+                        padding-bottom: $ksp; 
+                    }
+                    #{'.pl-'+$sp}{
+                        padding-left: $ksp; 
+                    }
+                    #{'.pr-'+$sp}{
+                        padding-right: $ksp; 
+                    }
+                } @else {
+                    /* Margins */
+                    #{'.mt-'+$size+'-'+$sp}{
+                        margin-top: $ksp; 
+                    }
+                    #{'.mb-'+$size+'-'+$sp}{
+                        margin-bottom: $ksp; 
+                    }
+                    #{'.ml-'+$size+'-'+$sp}{
+                        margin-left: $ksp; 
+                    }
+                    #{'.mr-'+$size+'-'+$sp}{
+                        margin-right: $ksp; 
+                    }
+                    /* Paddings */
+                    #{'.pt-'+$size+'-'+$sp}{
+                        padding-top: $ksp; 
+                    }
+                    #{'.pb-'+$size+'-'+$sp}{
+                        padding-bottom: $ksp; 
+                    }
+                    #{'.pl-'+$size+'-'+$sp}{
+                        padding-left: $ksp; 
+                    }
+                    #{'.pr-'+$size+'-'+$sp}{
+                        padding-right: $ksp; 
+                    }
+                }
+            }
+        }
+    }
+}
 
         

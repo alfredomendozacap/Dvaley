@@ -1,15 +1,11 @@
-.scrollY{
-    background: rgba(255,255,255,.5);
-    padding-bottom: 0;
-    font-weight: 500;
-}
+
 .back_theme{
-    background: $color-lila;
+    background: rgba(222, 40, 204, 0.6);
     color: #fff;
 }
 .navbar-dvalley{
     --height-navbar: 10rem;
-    @include mq(860px,max){
+    @include mq(950px,max){
         --height-navbar: 7rem;
     }
     margin-left: auto;
@@ -22,19 +18,25 @@
     left: 0;
     z-index: 10;
     transition: all .3s ease;
-    height: var(--height-navbar);
+    // height: var(--height-navbar);
     .navbar_content{
         height: 100%;
         align-items:center;
         position: relative;
-        @include mq(860px,max){
+        @include mq(950px,max){
             justify-content: space-between;
         }
     }
     .logo__dvalley{
         padding: 0;
-        > img {
-            width: 100%;
+        img {
+            width: 297px;
+            @include mq(950px,max){
+                width: 100%;
+            }
+        }
+        .logo_width{
+            width: 150px;
         }
     }
     .navbar__toggle{
@@ -43,7 +45,7 @@
         height: 2rem;
         cursor: pointer;
         background: linear-gradient(black 20%, transparent 20%,transparent 40%, black 40%,black 60%, transparent 60%,transparent 80%, black 80%);
-        @include mq(860px,max){
+        @include mq(950px,max){
             display: block;
         }
     }
@@ -58,14 +60,14 @@
        list-style: none;
        align-items: center;
        margin-left: auto;
-        @include mq(860px,max){
+        @include mq(950px,max){
             display: block;
             height: 100vh;
             width: 80vw;
             position: absolute;
-            top: 100%;
+            top: calc(100% + 1rem);
             right: calc(-80vw - 4rem);
-            background: $color-lila;
+            background: rgba(222, 40, 204, 0.6);
             color: #fff;
             padding-top: 1rem;
             padding-bottom: 1rem;
@@ -73,9 +75,12 @@
             transition: right .4s ease;
         }
     }
+    .scrollY-top{
+        top: 100%;
+    }
     li {
         flex: 1;
-        @include mq(860px,max){
+        @include mq(950px,max){
             padding: 1rem .5rem;
             width: 100%;
         }
@@ -91,5 +96,11 @@
     a:hover {
         color: $color-fuxia;
         text-shadow: 0px 0px 5px #000;
+        }
     }
+}
+.scrollY{
+    background: rgba(222, 40, 204, 0.6);
+    padding : 4px 3rem 1px;
+    font-weight: 500;
 }

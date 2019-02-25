@@ -13661,8 +13661,22 @@ body {
   background: url(../../assets/img/backgrounds/oriental.png);
 }
 
+.scrollY {
+  background: rgba(255, 255, 255, 0.5);
+  padding-bottom: 0;
+  font-weight: 500;
+}
+
+.back_theme {
+  background: #DE28CC;
+  color: #fff;
+}
+
 .navbar-dvalley {
-  padding: 1rem 5rem;
+  --height-navbar: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 4rem;
   font-size: 1.5rem;
   font-weight: 600;
   position: fixed;
@@ -13670,9 +13684,44 @@ body {
   left: 0;
   z-index: 10;
   transition: all 0.3s ease;
+  height: var(--height-navbar);
+}
+@media screen and (max-width: 860px) {
+  .navbar-dvalley {
+    --height-navbar: 7rem;
+  }
+}
+.navbar-dvalley .navbar_content {
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 860px) {
+  .navbar-dvalley .navbar_content {
+    justify-content: space-between;
+  }
+}
+.navbar-dvalley .logo__dvalley {
+  padding: 0;
 }
 .navbar-dvalley .logo__dvalley > img {
   width: 100%;
+}
+.navbar-dvalley .navbar__toggle {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background: linear-gradient(black 20%, transparent 20%, transparent 40%, black 40%, black 60%, transparent 60%, transparent 80%, black 80%);
+}
+@media screen and (max-width: 860px) {
+  .navbar-dvalley .navbar__toggle {
+    display: block;
+  }
+}
+.navbar-dvalley .show {
+  display: block;
+  right: -4rem;
 }
 .navbar-dvalley ul {
   margin-top: 0;
@@ -13682,14 +13731,41 @@ body {
   align-items: center;
   margin-left: auto;
 }
+@media screen and (max-width: 860px) {
+  .navbar-dvalley ul {
+    display: block;
+    height: 100vh;
+    width: 80vw;
+    position: absolute;
+    top: 100%;
+    right: calc(-80vw - 4rem);
+    background: #DE28CC;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    transition: right 0.4s ease;
+  }
+}
 .navbar-dvalley li {
   flex: 1;
+}
+@media screen and (max-width: 860px) {
+  .navbar-dvalley li {
+    padding: 1rem 0.5rem;
+    width: 100%;
+  }
 }
 .navbar-dvalley a {
   display: block;
   text-decoration: none;
   color: #000;
   text-align: center;
+}
+@media screen and (max-width: 860px) {
+  .navbar-dvalley a {
+    color: #fff;
+  }
 }
 
 .slider-dvalley {

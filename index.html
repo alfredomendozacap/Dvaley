@@ -12,31 +12,31 @@
 </head>
 
 <body>
-    <nav id="navbar" class="navbar-dvalley container-fluid">
-      <div class="navbar_content row">
-        <a class="logo__dvalley col-3" href="index.html">
-          <img id="logo" src="./assets/img/icons/logo-dvalley.png" alt="Logo D'Valley">
-        </a>
-        <div id="navbar__toggle" class="navbar__toggle"></div>
-        <ul id="main-navbar" class="col-8 row no-gutters">
-          <li class="item-xs-20">
-               <a id="btn-dvalley" href="qdvalley">D'VALLEY</a>
-          </li>
-          <li class="item-xs-20">
-                 <a id="btn-problema" href="problema">PROBLEMA</a>
-          </li>
-          <li class="item-xs-20">
-                 <a id="btn-solucion" href="solucion">SOLUCIÓN</a>
-          </li>
-          <li class="item-xs-20">
-                 <a id="btn-equipo" href="equipo">EQUIPO</a>
-          </li>
-          <li class="item-xs-20">
-                 <a id="btn-contacto" href="contacto">CONTACTO</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+       <nav id="navbar" class="navbar-dvalley container-fluid">
+              <div class="navbar_content row">
+                     <a class="logo__dvalley col-3" href="index.html">
+                            <img id="logo" src="./assets/img/icons/logo-dvalley.png" alt="Logo D'Valley">
+                     </a>
+                     <div id="navbar__toggle" class="navbar__toggle"></div>
+                     <ul id="main-navbar" class="col-8 row no-gutters">
+                            <li class="item-xs-20">
+                                   <a id="btn-dvalley" href="qdvalley">D'VALLEY</a>
+                            </li>
+                            <li class="item-xs-20">
+                                   <a id="btn-problema" href="problema">PROBLEMA</a>
+                            </li>
+                            <li class="item-xs-20">
+                                   <a id="btn-solucion" href="solucion">SOLUCIÓN</a>
+                            </li>
+                            <li class="item-xs-20">
+                                   <a id="btn-equipo" href="equipo">EQUIPO</a>
+                            </li>
+                            <li class="item-xs-20">
+                                   <a id="btn-contacto" href="contacto">CONTACTO</a>
+                            </li>
+                     </ul>
+              </div>
+       </nav>
        <!-- ==========================
            >>> HEADER <<<
     ========================== -->
@@ -168,19 +168,23 @@
                      </div>
               </section>
               <!-- °°°°°°° ANEMIA EN EL PERU °°°°°°° -->
+
+
+          
+
               <!-- °°°°°°° CIFRAS °°°°°°° -->
-              <section class="Cifras">
+              <section class="Cifras" id="cifras">
                      <div class="contenedor-cifras">
                             <div class="columna">
-                                   <p class="cifra">40</p>
+                                   <p class="cifra cifra-1">0</p>
                                    <p class="texto">Niños con anemia en todo el Perú</p>
                             </div>
                             <div class="columna">
-                                   <p class="cifra">150</p>
+                                   <p class="cifra cifra-2">0</p>
                                    <p class="texto">Niños con anemia en todo el Perú</p>
                             </div>
                             <div class="columna">
-                                   <p class="cifra">1320</p>
+                                   <p class="cifra cifra-3">0</p>
                                    <p class="texto">Niños con anemia en todo el Perú</p>
                             </div>
                      </div>
@@ -435,12 +439,16 @@
 
               </div>
        </footer>
+       
        <!-- ==========================
            >>> FOOTER <<<
     ========================== -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
        <script src="assets/js/jquery.min.js"></script>
        <script src="./assets/js/scrollbar.js"></script>
        <script src="assets/js/scroll-menu.js"></script>
+       <script src="assets/js/incremento-cifras.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
     w.addEventListener('scroll', () => {
         if (pageYOffset > 300) {
             navbar.style.background = 'rgba(222, 40, 204, 0.6)'
-            navbar.style.paddingBottom = '0'
+            navbar.style.padding = '4px 0px 1px 0px'
             navbar.style.fontWeight = '500'
         } else {
             navbar.style.background = 'none'

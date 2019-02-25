@@ -13688,8 +13688,15 @@ body {
 .navbar-dvalley a {
   display: block;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   text-align: center;
+  font-weight: 700;
+  transition: all ease 0.5s;
+  font-size: 22px;
+}
+.navbar-dvalley a:hover {
+  color: #FF105f;
+  text-shadow: 0px 0px 5px #000;
 }
 
 .slider-dvalley {

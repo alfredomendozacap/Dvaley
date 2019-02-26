@@ -159,6 +159,7 @@
         > ul {
             list-style-position: inside;
             font-size: 3em;
+            list-style-image: url(../img/icons/yogurt.png);
             @include mq(sm,max){
                 font-size: 2.5em;
             }

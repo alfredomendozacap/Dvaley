@@ -13928,6 +13928,7 @@ body {
 .second-item .list__benefits > ul {
   list-style-position: inside;
   font-size: 3em;
+  list-style-image: url(../img/icons/yogurt.png);
   margin-top: 1rem;
 }
 @media screen and (max-width: 576px) {

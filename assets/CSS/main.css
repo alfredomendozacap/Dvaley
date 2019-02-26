@@ -14318,6 +14318,12 @@ footer .logo-footer {
 footer a:hover {
   color: #FF105f;
 }
+footer .link__hidden {
+  cursor: text;
+}
+footer .link__hidden:hover {
+  color: #fff;
+}
 
 @media only screen and (max-width: 360px) {
   footer .logo-footer img {
@@ -14417,6 +14423,15 @@ section.Contacto .pre-frecuentes {
   section.Contacto .formulario {
     width: 90%;
   }
+}
+#contactosAlerta {
+  background: #18bc9c;
+}
+#contactosAlerta > p {
+  margin: 1rem 0;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

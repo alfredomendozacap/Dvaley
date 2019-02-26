@@ -121,3 +121,13 @@ section.Contacto {
         }
     }
 }
+
+#contactosAlerta{
+    background: #18bc9c;
+    > p{
+        margin: 1rem 0;
+        text-align: center;
+        padding: .7rem 1rem;
+        border-radius: 5px;
+    }
+}

@@ -82,6 +82,12 @@ footer {
     a:hover {
         color: #FF105f;
     }
+    .link__hidden{
+        cursor: text;
+        &:hover{
+            color:#fff;
+        }
+    }
 }
 
 

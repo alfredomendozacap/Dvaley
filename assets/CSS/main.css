@@ -13981,11 +13981,6 @@ body {
 .QDvalley p, .QDvalley h2 {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .QDvalley .product__qdvalley {
-    border-bottom: 2px dashed #000;
-  }
-}
 .QDvalley .product__qdvalley img {
   width: 100%;
 }
@@ -14006,11 +14001,6 @@ body {
 }
 .Problema p, .Problema h2 {
   text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .Problema .img__chart {
-    border-top: 2px dashed #000;
-  }
 }
 .Problema .img__chart img {
   width: 100%;

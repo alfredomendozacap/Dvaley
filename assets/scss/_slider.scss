@@ -94,9 +94,12 @@
             font-weight: 700;
         }
         > h2 {
-            text-shadow: 0 0 10px #000;
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
             color: $color-fuxia;
         }
+
+        
     }
     .product__dvalley{
         width: 100%;
@@ -163,6 +166,7 @@
             li{
                 // list-style-image: img('icons/strawberry.png');
                 text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+                font-weight: bolder;
             }
         }
     }

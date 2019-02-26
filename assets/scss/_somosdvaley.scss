@@ -4,7 +4,7 @@ section.SomosDvalley {
         height: 50vh;
         margin: 20px auto;
         position: relative;
-        background: $color-fuxia;
+        background: $color-melon;
     }
 
     .slide1,
@@ -16,8 +16,8 @@ section.SomosDvalley {
     }
 
     .slide1 {
-        background-image: linear-gradient(rgba($color-lila, 0.5),
-            rgba($color-lila, 0.5)),
+        background-image: linear-gradient(rgba($color-melon, 0.5),
+            rgba($color-melon, 0.5)),
             url(../img/images/fondo1.jpeg);
         background-repeat: no-repeat;
         background-position: center;
@@ -29,8 +29,8 @@ section.SomosDvalley {
     }
 
     .slide2 {
-        background-image: linear-gradient(rgba($color-lila, 0.5),
-            rgba($color-lila, 0.5)),
+        background-image: linear-gradient(rgba($color-melon, 0.5),
+            rgba($color-melon, 0.5)),
             url(../img/images/fondo2.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -41,8 +41,8 @@ section.SomosDvalley {
     }
 
     .slide3 {
-        background-image: linear-gradient(rgba($color-lila, 0.5),
-            rgba($color-lila, 0.5)),
+        background-image: linear-gradient(rgba($color-melon, 0.5),
+            rgba($color-melon, 0.5)),
             url(../img/images/fondo3.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -138,6 +138,7 @@ section.SomosDvalley {
         padding: 0;
         margin: 0px;
         text-shadow: 1px 1px 2px #000;
+        margin: auto;
     }
 }
 

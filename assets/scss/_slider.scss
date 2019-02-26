@@ -94,9 +94,12 @@
             font-weight: 700;
         }
         > h2 {
-            text-shadow: 0 0 10px #000;
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
             color: $color-fuxia;
         }
+
+        
     }
     .product__dvalley{
         width: 100%;
@@ -156,6 +159,7 @@
         > ul {
             list-style-position: inside;
             font-size: 3em;
+            list-style-image: url(../img/icons/yogurt.png);
             @include mq(sm,max){
                 font-size: 2.5em;
             }
@@ -163,6 +167,7 @@
             li{
                 // list-style-image: img('icons/strawberry.png');
                 text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+                font-weight: bolder;
             }
         }
     }
